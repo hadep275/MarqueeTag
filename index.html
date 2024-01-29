@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" src="img/svg+xml" href="paper-plane-regular.svg" />
+    <title>Marquee start/stop</title>
+    <style>
+      body {
+        margin: 100px;
+        height: 100vh;
+        background: linear-gradient(to bottom right, #16222a, #3a6073);
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: #fff;
+      }
+
+      #container {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        padding: 20px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      marquee {
+        font-size: 24px;
+        margin: 20px 0;
+        padding: 10px;
+        background: linear-gradient(to right, #36d1dc, #5b86e5);
+        color: #fff;
+        border-radius: 10px;
+        animation: marqueeAnimation 5s linear infinite alternate;
+      }
+
+      input {
+        font-size: 16px;
+        margin: 10px 0px 0 300px;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.1);
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      input:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      @keyframes marqueeAnimation {
+        0% {
+          transform: translateX(0);
+        }
+        10% {
+          transform: translateX(10%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <marquee id="mark" behavior="scroll" direction="">Marquee</marquee>
+      <input type="button" id="start" value="start" />
+      <input type="button" id="stop" value="stop" />
+      <script>
+        let mark = document.getElementById("mark");
+        let start = document.getElementById("start");
+        let stop = document.getElementById("stop");
+        stop.onclick = stopMark;
+        start.onclick = startMark;
+        function stopMark() {
+          mark.stop();
+        }
+        function startMark() {
+          mark.start();
+        }
+      </script>
+    </div>
+  </body>
+</html>
