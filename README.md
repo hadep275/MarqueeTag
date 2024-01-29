@@ -2,8 +2,6 @@
 
 A simple web application showcasing a marquee element with start and stop functionality. The marquee text scrolls horizontally with a gradient background, and you can control its motion using start and stop buttons.
 
-![Demo](demo.png)
-
 ## Features
 
 - **Marquee Scrolling:** Displays a marquee element with horizontal scrolling text.
@@ -24,7 +22,7 @@ To run this project locally, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/marquee-start-stop.git
+   git clone https://github.com/hadep275/MarqueeTag.git
    ```
 
 2. Open the `index.html` file in your web browser.
