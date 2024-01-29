@@ -13,7 +13,10 @@ You can check the live demo [here](https://hadep275.github.io/MarqueeTag/).
 
 ## Video Demo
 
-Watch the video demonstration [here](#).
+Watch the video demonstration
+
+[screen-capture (11).webm](https://github.com/hadep275/MarqueeTag/assets/65734173/30b367a3-f373-4b32-bf09-46b533921f74)
+
 
 ## Getting Started
 
